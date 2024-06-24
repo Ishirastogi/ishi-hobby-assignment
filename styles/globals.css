@@ -1,0 +1,435 @@
+/* Default */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" sans-serif;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+/* APP CSS */
+.pointer {
+  cursor: pointer;
+}
+
+.light-icon {
+  opacity: 50%;
+  size: 23px;
+}
+
+.primary-text-color {
+  color: #8064a2;
+}
+
+.scroll-up-button {
+  background: rgb(214, 205, 205);
+  opacity: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  z-index: 110;
+  /* transform: translateX(-50%); */
+}
+
+@media only screen and (max-width: 768px) {
+  .scroll-up-button {
+    right: 3%;
+    bottom: 2%;
+  }
+}
+
+/* Navbar Css */
+.navbar-container {
+  width: 100%;
+  margin: auto;
+}
+
+.navlink-icon {
+  font-size: 23px;
+}
+
+.custom-outline-btn {
+  color: #8064a2;
+  border-color: #8064a2;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.custom-outline-btn:hover {
+  background-color: #8064a2;
+  color: #ffffff;
+}
+
+.dropdown {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.profile-dropdown-content {
+  position: absolute;
+  width: 150px;
+  right: 0;
+  transform: translateY(40%);
+  z-index: 1;
+  padding: 5px;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  width: 220px;
+  left: 0;
+  z-index: 1;
+}
+
+.space {
+  opacity: 0;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 3px;
+}
+
+.dropdown:hover .nav-dropdown-content {
+  display: block;
+}
+
+.nav-dropdown-link {
+  text-decoration: none;
+  color: #6d747a;
+}
+
+.nav-modal {
+  position: fixed;
+  z-index: 1060;
+  top: 5%;
+  left: 25%;
+  padding: 10px 0px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  /* transform: translateX(-50%) translateY(-80%); */
+  width: 50%;
+  /* height: 100%; */
+  background: white;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 960;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: gray;
+  filter: blur(10px);
+  opacity: 50%;
+}
+
+.footer .footer-heading {
+  color: #08090a;
+  font-weight: bold;
+}
+
+.footer li {
+  margin-top: 10px;
+  color: #08090a;
+  cursor: pointer;
+}
+
+@media (min-width: 100px) and (max-width: 330pxx) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  /* Your CSS rules for smaller screens here */
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+
+  /* Your CSS rules for smaller screens here */
+  .space {
+    display: none;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .dropdown {
+    margin-top: 5px;
+  }
+
+  .dropdown .light-icon {
+    size: 15px;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+
+  .navlink-icon {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  .nav-modal {
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+  }
+}
+
+/* For screens between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Your CSS rules for medium-sized screens here */
+}
+
+/* For screens larger than 1024px */
+@media only screen and (min-width: 1024px) {
+  /* Your CSS rules for larger screens here */
+}
+
+/* Home Css */
+.section-1 img {
+  width: 100%;
+}
+
+.section-2 .card-1 {
+  color: black;
+  border: 1px solid #8064a2;
+  border-radius: 5px;
+}
+
+.add-new .desc {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.card-1 {
+  color: black;
+  border: 2px solid #8064a2;
+  border-radius: 5px;
+}
+
+.card-1-icon {
+  color: #8064a2;
+}
+
+.card-1-icon .custom-outline-btn {
+  color: #8064a2;
+  border-color: #8064a2;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.card-1:hover .card-1-icon {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-1:hover {
+  background-color: #8064a2;
+  color: white;
+  border-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* card-2 */
+.card-2 {
+  color: black;
+  border: 2px solid #77933c;
+  border-radius: 5px;
+}
+
+.card-2-icon {
+  color: #77933c;
+}
+
+.card-2:hover .card-2-icon {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-2:hover {
+  background-color: #77933c;
+  color: white;
+  border-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* card-3 */
+
+.card-3 {
+  color: black;
+  border: 2px solid #C0504D;
+  border-radius: 5px;
+}
+
+.card-3-icon {
+  color: #C0504D;
+}
+
+.card-3:hover .card-3-icon {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-3:hover {
+  background-color: #C0504D;
+  color: white;
+  border-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* card-4 */
+.card-4 {
+  color: black;
+  border: 2px solid #0096C8;
+  border-radius: 5px;
+}
+
+.card-4-icon {
+  color: #0096C8;
+}
+
+.card-4:hover .card-4-icon {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-4:hover {
+  background-color: #0096C8;
+  color: white;
+  border-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.sction-4-heading {
+  font-size: 36px;
+  line-height: 54px;
+}
+
+/* add new */
+.add-new {
+  max-width: 840px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* Your CSS rules for smaller screens here */
+  .sction-4-heading {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .add-new {
+    max-width: 100%;
+  }
+}
+
+/* Auth Template Css */
+.container-tab {
+  justify-content: start;
+}
+
+.tab {
+  color: #939ca3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.active-tab {
+  color: #8064a2;
+  font-weight: bold;
+  border-bottom: 3px solid #8064a2;
+  cursor: pointer;
+}
+
+.templet-button {
+  border: 1px solid #8064a2;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.templet-button:hover {
+  background-color: #8064a2;
+  color: white;
+}
+
+.breakline-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(40%) translateX(-50%);
+  background: whitesmoke;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media only screen and (max-width: 540px) {
+
+  /* Your CSS rules for smaller screens here */
+  .container-tab {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  /* Your CSS rules for smaller screens here */
+}
+
+/* Form Css */
+.form {
+  width: 100%;
+}
+
+.show-password {
+  position: absolute;
+  right: 5%;
+  top: 8%;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  /* width: 20px;
+  height: 20px; */
+  border: 1px solid #8064a2;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.custom-checkbox input[type="checkbox"]:checked {
+  background-color: #8064a2;
+}
+
+.custom-checkbox label {
+  font-size: 14px;
+}
+
+/* Custom CSS for the checkbox label */
+.custom-checkbox label {
+  font-weight: 400;
+}
+
+.forgot-link {
+  display: inline;
+  text-decoration: none;
+}
